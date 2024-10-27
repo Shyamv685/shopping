@@ -81,10 +81,10 @@
         <option>Medium</option>
         <option>Small</option>
     </select><br>
-    <input class="input" type="number" value="1">
+    <input class="input" type="number" value="1" minlength="2">
     <a href="#" class="btn3">Add to Cart</a> 
     <h3 class="Prodt">Product Details</h3>
-    <p class="itemsumer">give your Summer wardrobe a Style upgrade with the HRX Men's Active T-Shirt. Team it with a pair of Shorts for your morning workout or a denims for an evening out with the guys</p>
+    <p class="itemsumer">give your Summer wardrobe a Style upgrade with the HRX<br> Men's Active T-Shirt. Team it with a pair of Shorts for your <br>morning workout or a denims for an evening out with the guys</p>
     
 </div>
 
@@ -198,29 +198,29 @@
 
 
 <script>
-    var ProductImg = document.getElementById("#productImg");
+    var ProductImg = document.getElementById("productImg");
     var SmallImg = document.getElementById(".SmallImg");
 
-SmallImg[0].onclick = function(){
+SmallImg[0].onClick = function(){
     ProductImg.src = SmallImg[0].src;
 }
 
 
 
-SmallImg[1].onclick = function(){
+SmallImg[1].onClick = function(){
     ProductImg.src = SmallImg[1].src;
 }
 
-SmallImg[2].onclick= function(){
+SmallImg[2].onClick= function(){
     ProductImg.src = SmallImg[2].src;
 }
 
 
-SmallImg[3].onclick = function(){
+SmallImg[3].onClick = function(){
     ProductImg.src = SmallImg[3].src;
 }
 
-SmallImg[4].onclick = function(){
+SmallImg[4].onClick = function(){
     ProductImg.src = SmallImg[4].src;
 }
 
