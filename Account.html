@@ -23,8 +23,8 @@
             <li><a href="index.html">Home</a></li>
             <li>About</li>
              <li><a href="products.html" >Products </a></li>
-              <li>Account</li>
-              <img  class="cart" src="./images/cart.png" alt="cart">
+              <li><a href="Account.html"> Account</li></a>
+             <a href="Cart.html"> <img  class="cart" src="./images/cart.png" alt="cart"></a>
         </ul>
     </nav>
 </div>
@@ -52,6 +52,32 @@
         <img src="./images/logo-white.png" alt="">
         <p>Our purpose is to Sustainably make the Pleasure and Benefits of Sports Accessible to the Many.</p>
     </div>
+    <div class="div">
+        <div class="form-container">
+            <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()" >Register</span>
+                <hr id="indicator">
+            </div>
+                
+            <form id="LoginForm" >
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="password" >
+                <button type="submit" class="btn">Login</button>
+                <a href="">Forgot password</a>
+            </form>
+
+
+            <form id="RegForm" >
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="password" >
+                <button type="submit" class="btn">Register</button>
+            </form>
+
+
+        </div>
+    </div>
 
     <div class="foot3">
         <h3>Useful Links</h3>
@@ -78,7 +104,25 @@
 
 </div>
 
+<script>
+  var LoginForm = document.getElementById("LoginForm");
+  var LoginForm = document.getElementById("RegForm");
+  var indicator = document.getElementById("Indicator");
 
+
+function register(){
+  RegForm.style.transform= "translateX(0px)"  
+  LoginForm.style.transform= "translateX(0px)"  
+}
+
+function login(){
+  RegForm.style.transform= "translateX(300px)"  
+  LoginForm.style.transform= "translateX(300px)"  
+  indicator.style.transform= "translateX(0px)"  
+}
+
+
+</script>
 
 
 </body>
