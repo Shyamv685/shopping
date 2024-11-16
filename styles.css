@@ -300,7 +300,7 @@ body{
 }.page-btn{
     margin:0 auto 80px;
     margin-top: 50px;
-    margin: left -3%;0px;
+    margin-left :300px;
 }.page-btn span{
     display: inline-block;
     border: 1px solid #ff523b;
@@ -444,7 +444,16 @@ color:orangered;
     margin:10px 0;
     padding:0 10px;
     border: 1px solid  #ccc;
-}form .btn{
+}form input:focus{
+    outline:none;
+    border:1px solid orangered;
+}form input:hover{
+    color:black;
+    border:1px solid orangered;
+}
+
+
+form .btn{
     width:40%;
     border:none;
     cursor: pointer;
@@ -455,16 +464,12 @@ border:2px solid transparent;
 }
 form .btn:hover{
         transform: scale(1.0);
-        border-color:orangered;
         background: transparent;
-        color:orangered;;
+        color:orangered;
 }
-
-
-form .btn:focus{
-    outline:none;
-}form .btn:active{
+form .btn:active{
     color:rgb(18, 17, 17);
+    transform: scale(1.1);
 }
 
 #LoginForm{
@@ -610,7 +615,16 @@ button {
     border: none;
     border-radius:5px;
     cursor: pointer;
-  } 
+    transition:0.6s;
+    animation: ease-in;
+    border:2px solid transparent;
+  } button:hover{
+    border-color:orangered;
+    background: transparent;
+    color:orangered;
+  }button:active{
+    transform: scale(1.1);
+  }
   #cart {
     background-color: #fff;
     padding:0px;
@@ -637,6 +651,7 @@ button {
   
   #clear-cart:hover {
     background-color: #c82333;
+    color:white;
   }#cart h3{
     background-color: #ff523b;
     color: white;
@@ -644,7 +659,7 @@ button {
     margin-top:-5px;
   }
   #userlogo i{
-    font-size:28px;
-    margin-top:-10px;
+    font-size:25px;
+    margin-top:-5px;
     margin-left:50px;
   }
