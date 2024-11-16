@@ -21,10 +21,10 @@
     <nav >
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li>About</li>
-             <li><a href="products.html" >Products </a></li>
-              <li><a href="Account.html"> Account</li></a>
-             <a href="Cart.html"> <img  class="cart" src="./images/cart.png" alt="cart"></a>
+            <li><a href="About.html" >About</a></li>
+             <li><a href="products.html" >Products <i class="fa fa-shopping-bag" aria-hidden="true"></i> </a></li>
+             <!--<li> <a href="Cart.html"> <i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li> -->
+             <li><a href="Account.html" id="userlogo"> <i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
         </ul>
     </nav>
 </div>
@@ -103,13 +103,24 @@
         </tr>
         <tr>
             <td>Total</td>
-            <td>$230.00</td>
+            <td> $<span id="total-price"></span>0.00</td>
+            
         </tr>
+       
     </table>
+   
 </div>
 
 
 </div>
+
+<div id="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="total-price">0.00</span></p>
+    <button id="clear-cart">Clear Cart</button>
+  </div>
+
 
 
 
@@ -121,8 +132,8 @@
 
 
 <!---footer-->
-<div class="footer">
-    <div class="foot1">
+<div class="crtfooter">
+    <div class="crtfoot1">
         <h3>Download Our App</h3>
         <p>Download App for Android and ios Mobile phone.</p>
         <div class="app-logo">
@@ -131,12 +142,12 @@
         </div>
     </div>
 
-    <div class="foot2">
+    <div class="crtfoot2">
         <img src="./images/logo-white.png" alt="">
-        <p>Our purpose is to Sustainably make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+        <p>Our purpose is to Sustainably make the Pleasure and Benefits of Sports<br> Accessible to the Many.</p>
     </div>
 
-    <div class="foot3">
+    <div class="crtfoot3">
         <h3>Useful Links</h3>
         <ul>
            <li>Coupons</li>
@@ -148,7 +159,7 @@
 
 
 
-    <div class="foot4">
+    <div class="crtfoot4">
         <h3>Follow us</h3>
         <ul>
            <li>Facebook</li>
@@ -162,7 +173,11 @@
 </div>
 
 
-<script>
+
+
+<script src="script.js"></script>
+
+/*
     var ProductImg = document.getElementById("productImg");
     var SmallImg = document.getElementById(".SmallImg");
 
@@ -187,10 +202,8 @@ SmallImg[3].onClick = function(){
 
 SmallImg[4].onClick = function(){
     ProductImg.src = SmallImg[4].src;
-}
+}*/
 
-
-</script>
 
 </body>
 </html>
